@@ -1,0 +1,23 @@
+[package]
+name = "parsenmap"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+exclude=[".DS_Store"]
+description = "This is a tool for parsing nmap xml file to csv or json"
+repository = "https://github.com/arg2u/parsenmap.git"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "parsenmap"
+structnmap = "src/lib.rs"
+doctest = false
+doc = true 
+crate-type = ["lib"]
+
+[dependencies]
+xml-rs = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+regex = "1"
+structopt = "0.3.26"
