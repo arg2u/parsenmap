@@ -1,6 +1,6 @@
 [package]
 name = "parsenmap"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "MIT"
 exclude=[".DS_Store"]
@@ -10,7 +10,7 @@ repository = "https://github.com/arg2u/parsenmap.git"
 
 [lib]
 name = "parsenmap"
-structnmap = "src/lib.rs"
+parsenmap = "src/lib.rs"
 doctest = false
 doc = true 
 crate-type = ["lib"]
